@@ -1,0 +1,9 @@
+{
+  "name": "Add User",
+  "description": "Add User package file",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4"
+  }
+}

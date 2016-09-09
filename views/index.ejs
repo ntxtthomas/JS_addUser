@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Survey</title>
+</head>
+<style>
+	* {margin: 0; padding: 0; }
+	.wrapper{width: 980px;}
+	.container {width: 700px; margin: 35px auto; padding: 20px; border: 1px solid black;}
+	input, label, select, textarea, #button  {margin: 15px; display: block;}
+
+</style>
+<body>
+	<div class="container">
+		<h2>Add User Form</h2>
+		<form action="/results" method="post">
+			<label for="name">Your Name: </label>
+			<input type="text" name="name"/>
+			<label for="location">Dojo Location: </label>
+			<select name="location" >
+				<option value="Mountain View">Mountain View</option>
+				<option value="Los Angeles">Los Angeles</option>
+				<option value="Seattle">Seattle</option>
+				<option value="Dallas">Dallas</option>
+			</select>
+			<label for="language">Favorite Language: </label>
+			<select name="language" > 
+				<option value="JavaScript">JavaScript</option>
+				<option value="Ruby">Ruby</option>
+				<option value="Algorithm">Algorithm</option>
+				<option value="Python">Python</option>
+			</select>
+			<label for="comment">Comment(Optional):</label>
+			<textarea name="comment" cols="70" rows="10"></textarea>
+			<input type="submit" name="submit" id="button" />
+		</form>
+	</div>
+	
+</body>
+</html>

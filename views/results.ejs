@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Results</title>
+</head>
+<style>
+	* {margin: 0; padding: 0; }
+	.wrapper{width: 980px;}
+	.container {width: 700px; margin: 35px auto; padding: 20px; border: 1px solid black;}
+	input, label, select, textarea  {margin: 15px; display: block;}
+	th {display: block; text-align: left;margin:5px;}
+	button {float: right;}
+	h5{text-decoration: underline;}
+</style>
+<body>
+<div class="wrapper">
+	<div class="container">
+		<h2>Results</h2>
+		<h5>Submitted Information</h5>
+		<table>
+			<tr>
+				<th>Name:<%= name  %></th>
+				<th>Dojo Location:<%= location  %> </th>
+				<th>Favorite Language: <%= language %></th>
+				<th>Comments:<%= comment  %></th> 
+			</tr>
+		</table>
+		<button onclick = "window.location.href='/'">Go Back</button>
+
+	</div><!--END OF CONTAINER-->
+</div><!--END OF WRAPPER-->
+	
+</body>
+</html>
